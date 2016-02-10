@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight=".35"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/textMiddle"
+                android:gravity="center|center_vertical">
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edttxt_border"
+                    android:drawablePadding="10dp"
+                    android:hint="Username"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="#787878"
+                    android:textSize="16sp" />
+
+
+
+                <Button
+                    android:id="@+id/nxt_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editEmail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/green_border"
+                    android:padding="8dp"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
